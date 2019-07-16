@@ -20,9 +20,6 @@ header div{
     height: 100px;
     
 }
-header .verde{
-    background-color: green;
-}
 
 section{
     display: flex;
@@ -50,3 +47,26 @@ footer div{
     width: 100px;
     height: 100px;
 }
+
+/* .verde{
+    background-color: green;
+}
+.rosa{
+    background-color: palevioletred;
+}
+.azul{
+    background-color: blue;
+}
+.violeta{
+    background-color: blueviolet;
+}
+.laranja{
+    background-color: orangered;
+}
+
+.amarelo{
+    background-color:yellow;
+}
+.preto{
+    background-color: black;
+} */

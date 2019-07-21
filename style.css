@@ -1,72 +1,65 @@
-body{
-    display: grid;
-    grid-template-areas: 'header header header header'
-                         'section section section section'
-                         'footer footer footer footer';
-    grid-template-rows: 30vh 30vh 30vh;
-    grid-template-columns: 25% 25% 25%;
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ background-image: url(img/aka.png);
+}
+body button{
+    color: rgb(143, 127, 127);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    border-radius: 0.7;
+    font-family: 'Roboto', sans-serif;
 
 }
-header{
-    display: flex;
-    justify-content:space-evenly; 
-    align-items: center;    
-    grid-area: header;
+
+main {
+  margin: 15vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  perspective: 1000px;
 }
-header div{
     
-    background-color: black;
-    width: 100px;
-    height: 100px;
-    
+
+header h1{
+    color: rgb(235, 219, 219);
 }
 
-section{
-    display: flex;
-    justify-content: space-evenly; 
-    align-items: center;    
-    
-    grid-area: section;
-}
-section div{
   
-    background-color: black;
-    width: 100px;
-    height: 100px;
 
-}
-footer{
-    display: flex;
-    justify-content: space-evenly; 
-    align-items: center;    
-    grid-area: footer;  
-}
-footer div{
-    
-    background-color: black;
-    width: 100px;
-    height: 100px;
+
+
+.frente,
+.verso {
+  position: absolute;
 }
 
-/* .verde{
-    background-color: green;
-}
-.rosa{
-    background-color: palevioletred;
-}
-.azul{
-    background-color: blue;
-}
-.violeta{
-    background-color: blueviolet;
-}
-.laranja{
-    background-color: orangered;
-}
-
-.amarelo{
-    background-color:yellow;
-}
-.preto{
+/* .verso{
     background-color: black;
+    opacity: 0.9;
 } */
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  width: 150px;
+  background-color: black;
+  border-radius: 10px;
+  margin: 4px;
+  transform-style: preserve-3d;
+  transition: transform.5s;
+  background-size: 100% 100%;
+  /* opacity: 0.7; */
+}
+.card.flip {
+  transform: rotateY(180deg);
+}
+
+.card:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px black;
+}
